@@ -48,6 +48,10 @@ img {
     max-width: 100%;
 }
 
+.img-container {
+
+}
+
 .product-info {
     padding: 1rem 1rem;
 }
@@ -101,3 +105,4 @@ button:hover {
     background-color: hsl(158, 36%, 20%);
     cursor: pointer;
 }
+
