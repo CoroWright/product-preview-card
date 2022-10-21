@@ -28,55 +28,78 @@ body {
     background-color: var(--cream);
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
+    color: var(--dark--grayish--blue);
 }
+
+/* Composition */
+
+.flow-flex {
+    display: flex;
+}
+
+/* Uitlity */
+
+
+
+/* Block */
 
 .container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 250px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    width: 550px;
+    border-radius: .5rem; 
+    overflow: hidden;
     background-color: var(--white);
-    border-radius: .5rem;
 }
+
+/* Exceptions */
+
+
 
 img {
     max-width: 100%;
+    overflow: hidden;
 }
 
 .img-container {
-
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/image-product-desktop.jpg);
 }
 
 .product-info {
-    padding: 1rem 1rem;
+    padding: 2rem;
+    width: 50%;
 }
 
-.productory-category {
-    color: var(--dark--grayish--blue);
+.product-category {
+    letter-spacing: .25ch;
+    padding-bottom: .5rem;
+    font-size: 1.4ch;
 }
 
 h1 {
     font-family: 'Fraunces', serif;
     color: var(--very--dark--blue);
-    padding-top: .2rem;
+    padding: .2rem 0 1rem;
+    line-height: 1.5ch;
 }
 
 .description {
     color: var(--dark--grayish--blue);
     font-family: 'Montserrat', sans-serif;
     line-height: 1.3rem;
+    font-size: 1.4ch;
 }
 
 .price {
     display: flex;
-    align-items: center;
     justify-content: flex-start;
-    margin: .5rem;
+    align-items: center;
+    padding: 1.5rem 0 1rem;
 }
 
 .discounted-price {
@@ -86,13 +109,17 @@ h1 {
     padding-right: 1rem;
 }
 
+.normal-price {
+    text-decoration: line-through;
+}
+
 button {
     background-color: var(--cyan);
     color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: .3rem;
+    border-radius: .5rem;
     padding: .7rem;
     width: 100%;
 }
@@ -105,4 +132,3 @@ button:hover {
     background-color: hsl(158, 36%, 20%);
     cursor: pointer;
 }
-
