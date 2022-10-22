@@ -22,7 +22,10 @@
   <div class="container [ flow-flex ]">
 
     <div class="img-container">
-      <img src="images/image-product-desktop.jpg" alt="">
+      <picture>
+        <source media="(max-width: 600px)" srcset="images/image-product-mobile.jpg" alt="">
+        <img src="images/image-product-desktop.jpg" alt="">
+      </picture>
     </div>
 
     <div class="product-info">
